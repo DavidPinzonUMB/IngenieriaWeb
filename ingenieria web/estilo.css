@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+
+    /* Fondo con degradado suave */
+    background: linear-gradient(135deg, #e3edf7, #f8fbff);
+
+    /* Para que el footer siempre quede abajo */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER con degradado */
+header {
+    background: linear-gradient(90deg, #042c75, #770ea0);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto */
+nav a:hover {
+    background-color: white;
+    color: #1e3a5f;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+/* MAIN elegante */
+main {
+    padding: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    flex: 1;
+}
+
+main:hover {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+h2 {
+    text-align: center;
+    color: #1e3a5f;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3a5f, #4a90e2);
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+section, article {
+    margin-bottom: 40px;
+}
+
+aside {
+    background: linear-gradient(135deg, #e9eef5, #d7e3f4);
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-left: 6px solid #1e3a5f;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* FOOTER con degradado */
+footer {
+    background: linear-gradient(90deg, #770ea0, #042c75);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Links generales */
+a {
+    color: #0b5394;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #dbe9ff;
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+
+/* Estilos para el html de la APLICACIÓN WEB */
+
+/* Subtítulos internos */
+h3 {
+    color: #4e4376;
+    margin-bottom: 10px;
+}
+
+/* Lista más limpia */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+/* Mejora visual de artículos (tarjetas) */
+section article {
+    background: linear-gradient(135deg, #ffffff, #f4f7ff);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+section article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Arquitectura en columnas */
+@media (min-width: 768px) {
+    section:last-of-type {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    section:last-of-type h2 {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Línea decorativa */
+h2::after {
+    background: linear-gradient(90deg, #1e3c72, #6a11cb);
+    width: 80px;
+}
+
+.logo {
+    width: 250px;   /* Ajusta el tamaño */
+    height: auto;   /* Mantiene proporción */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Estilo básico para los botones del nav */
+    .btn {
+      background: #00bcd4;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #0097a7;
+    }
+
+    h2, label {
+      color: black;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .enviar {
+      background: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .enviar:hover {
+      background: #388e3c;
+    }

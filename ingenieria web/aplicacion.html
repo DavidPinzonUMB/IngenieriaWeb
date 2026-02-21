@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicación Web - Gastos Compartidos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Aplicación Web para Gastos Compartidos</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ingeniería Web</a></li>
+            <li><a href="cliente-servidor.html">Cliente-Servidor</a></li>
+            <li><a href="semantica.html">Semántica</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li><a href="aplicacion.html">Aplicación Web</a></li>
+            <li><a href="quienes_somos.html">¿Quienes somos?</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <h2>Problemática</h2>
+        <p>
+            Cuando varias personas comparten gastos como en el caso de roomies, viajes familiares,
+            grupos de amigos o parejas, suele haber confusión sobre cuánto debe pagar cada uno.
+        </p>
+
+        <p>
+            Los problemas más comunes son errores al dividir los gastos, que alguien consuma más que
+            otros, falta de control financiero y conflictos por dinero.
+        </p>
+    </section>
+
+    <section>
+        <h2>Solución Propuesta</h2>
+        <p>
+            Se propone desarrollar una aplicación web cliente que permita registrar gastos compartidos
+            y calcular automáticamente cuánto le corresponde pagar a cada persona.
+        </p>
+
+        <article>
+            <h3>La aplicación permitirá:</h3>
+            <ul>
+                <li>Crear grupos de gastos.</li>
+                <li>Registrar pagos realizados.</li>
+                <li>Dividir gastos por categorías (viaje, servicios públicos, otros).</li>
+                <li>Establecer metas de ahorro.</li>
+                <li>Visualizar automáticamente quién debe y cuánto debe.</li>
+                <li>Actualizar balances cuando se abonen o paguen gastos.</li>
+                <li>Realizar pagos automáticos autorizados.</li>
+            </ul>
+        </article>
+
+        <p>
+            La aplicación funcionará como cliente enviando y recibiendo datos desde un servidor local,
+            cumpliendo el modelo Cliente-Servidor.
+        </p>
+    </section>
+
+    <section>
+        <h2>Arquitectura del Sistema</h2>
+
+        <article>
+            <h3>Cliente</h3>
+            <p>
+                Se encargará del registro de usuarios, creación de grupos, registro de gastos
+                y visualización de resultados mediante una interfaz amigable.
+            </p>
+        </article>
+
+        <article>
+            <h3>Servidor (Local)</h3>
+            <p>
+                Recibirá las solicitudes del cliente, validará los datos y realizará las consultas necesarias.
+            </p>
+        </article>
+
+        <article>
+            <h3>Base de Datos</h3>
+            <p>
+                Se utilizará el gestor MariaDB para realizar operaciones CRUD
+                (Crear, Leer, Actualizar y Eliminar registros).
+            </p>
+        </article>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 - Trabajo académico de Ingeniería Web</p>
+    <p>Autores: Jesika Pachon - David Pinzon - Santiago Colmenares - Luilly Perea</p>
+</footer>
+
+</body>
+</html>
